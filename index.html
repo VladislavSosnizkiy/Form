@@ -11,22 +11,29 @@
   </head>
   <body>
     <section class="container">
-      <header>Registration Form</header>
+      <header>Create an Account</header>
       <form action="#" class="form">
+        <div class="name-input">
         <div class="input-box">
-          <label>Full Name</label>
+          <label> First Name</label>
+          <input type="text" placeholder="Name" required />
+        </div>
+        <div class="input-box">
+          <label>Last Name</label>
           <input type="text" placeholder="Enter full name" required />
         </div>
+      </div>
 
         <div class="input-box">
           <label>Email Address</label>
           <input type="text" placeholder="Enter email address" required />
+          <p>We'll never share your email with anyone else.</p>
         </div>
 
         <div class="column">
           <div class="input-box">
             <label>Phone Number</label>
-            <input type="number" placeholder="Enter phone number" required />
+            <input type="number" placeholder="Phone number" required />
           </div>
           <div class="input-box">
             <label>Birth Date</label>
@@ -38,7 +45,7 @@
           <div class="gender-option">
             <div class="gender">
               <input type="radio" id="check-male" name="gender" checked />
-              <label for="check-male">male</label>
+              <label for="check-male">Male</label>
             </div>
             <div class="gender">
               <input type="radio" id="check-female" name="gender" />
@@ -46,14 +53,11 @@
             </div>
             <div class="gender">
               <input type="radio" id="check-other" name="gender" />
-              <label for="check-other">prefer not to say</label>
+              <label for="check-other">Prefer not to say</label>
             </div>
           </div>
         </div>
-        <div class="input-box address">
-          <label>Address</label>
-          <input type="text" placeholder="Enter street address" required />
-          <input type="text" placeholder="Enter street address line 2" required />
+        <div class="input-box">
           <div class="column">
             <div class="select-box">
               <select>
@@ -66,13 +70,76 @@
             </div>
             <input type="text" placeholder="Enter your city" required />
           </div>
-          
-        </div>
+          </div>
         <button>Sign Up</button>
+        <div class="privacy">
+          <p>
+            By clicking the 'Sign Up' button, you confirm that you accept our 
+            <a href="">Terms of Use</a>  and 
+            <a href="">Private Policy</a> Policy.
+          </p>
+        </div>
+        <div class="have-an-acc">
+          <p>
+            Have an account?
+          </p>
+          <p>
+            <a href="">Log in</a>
+          </p>
+        </div>
       </form>
     </section>
-    <section class="container">
-      
+    <section class="container2">
+      <form action="#" class="form">
+      <h2 >Profile</h2>
+      <div class="profile-photo">
+          <img src="📷 Image.jpg" alt="">
+          <div class="photo-upload">
+            <img src="Photo Camera.svg" alt="">
+          </div>
+          <div class="trash">
+            <img src="Trash.svg" alt="">
+          </div>
+      </div>
+      <div class="name-input">
+        <div class="input-box">
+          <label> First Name</label>
+          <input type="text" placeholder="Name" required />
+        </div>
+        <div class="input-box">
+          <label>Last Name</label>
+          <input type="text" placeholder="Enter full name" required />
+        </div>
+      </div>
+        <div class="input-box">
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>Country</option>
+                <option>America</option>
+                <option>Japan</option>
+                <option>India</option>
+                <option>Nepal</option>
+              </select>
+            </div>
+            <input type="text" placeholder="Enter your city" required />
+          </div>
+        </div>
+        <div class="name-input">
+          <div class="input-box">
+            <label>Zip Code</label>
+            <input type="code" placeholder="code" required />
+          </div>
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input type="number" placeholder="number" required />
+          </div>
+        </div>
+    </form>
+    <button class="update-button">
+      Update
+    </button>
     </section>
+  
   </body>
 </html>
